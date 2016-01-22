@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard | Snowflakes</title>
+    
+    <!-- Meta tags -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+    <!-- End Meta tags -->
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/images/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--End Favicon-->
+    
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/js/select2/select2.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/skin-blue.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini main-bg">
+	<div class="wrapper">
+        <header class="main-header">
+            <a href="6-dashboard.html" class="logo">
+                <span class="logo-mini"><img src="assets/images/mini-logo.png" alt="Snowflakes"></span>
+                <span class="logo-lg"><img src="assets/images/logo.png" alt="Snowflakes"></span>
+            </a>
+            
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                      <!-- User Account -->
+                      <li class="user"><a href="#"><span class="hidden-xs">Welcome, <strong>Administrator</strong></span></a></li>
+                      <!-- Notifications -->
+                      <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                          <i class="fa fa-bell-o"></i>
+                          <span class="label label-warning">4</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li class="header">You have 4 new notifications</li>
+                          <li>
+                            <ul class="menu">
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-frown-o text-red"></i> Product owner Maylyn Orbe has only P4,000.00 credits in his/her wallet.
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-frown-o text-red"></i> Product owner Maylyn Orbe has only P4,000.00 credits in his/her wallet.
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-frown-o text-red"></i> Product owner Maylyn Orbe has only P4,000.00 credits in his/her wallet.
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-frown-o text-red"></i> Product owner Maylyn Orbe has only P4,000.00 credits in his/her wallet.
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="footer"><a href="#">See all notifications</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-sign-out"></i></a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar">
+        <section class="sidebar">
+          <!-- sidebar menu -->
+          <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="treeview active">
+              <a href="6-dashboard.html">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="7-credits-allocation.html">
+                <i class="fa fa-credit-card"></i> <span>Credits Allocation</span>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-users"></i> <span>User Management</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="8-product-owner-user-management.html"><i class="fa fa-circle-o"></i> Product Owner</a></li>
+                <li><a href="10-administrator-user-management.html"><i class="fa fa-circle-o"></i> Administrator</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-paperclip"></i>
+                <span>Reports</span>
+                <span class="label bg-red pull-right">4</span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="11-credits-allocation-report.html"><i class="fa fa-circle-o"></i> Credits Allocation Report</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-gears"></i> <span>Settings</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="12-settings-product-owner-threshold.html"><i class="fa fa-circle-o"></i> Product Owner Threshold</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+        </aside>
+        
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+        <!-- Wallet Balance -->
+        <section class="wallet-content">
+        	<p>Wallet Balance: <span>&#8369;</span> 575, 293.00</p>
+        </section>
+        
+        <!-- Page Titles and Breadcrumbs -->
+        <section class="content-header">
+          <h1>Dashboard<small>Control Panel</small></h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+          </ol>
+        </section>
+        
+        <!-- Main content -->
+        <section class="content">
+          <!-- Notifications (Small boxes) -->
+          <div class="row">
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-green">
+                <div class="inner">
+                  <h3>2</h3>
+                  <p>Product owners with <br> low credit limit</p>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-frown-o"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-purple">
+                <div class="inner">
+                  <h3>0</h3>
+                  <p>Failed transactions <br> per product</p>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-ban"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-red">
+                <div class="inner">
+                  <h3>0</h3>
+                  <p>Debit wallet <br> approval</p>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-credit-card"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-aqua">
+                <div class="inner">
+                  <h3>0</h3>
+                  <p>Products with low <br> credit limit</p>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-long-arrow-down"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+          </div><!-- /.row -->
+          
+          <!-- Main row -->
+          <div class="row">
+            <!-- Left col -->
+            <section class="col-lg-7">
+              <!-- Recent Credits Allocation Table -->
+              <div class="box">
+                <div class="box-header with-border">
+                  <i class="fa fa-credit-card"></i> <h3 class="box-title">Recent Credits Allocation</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Product Owner</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01/20/2016</td>
+                        <td>Maylyn Orbe</td>
+                        <td align="right">10,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>01/15/2016</td>
+                        <td>Lorena Gallon</td>
+                        <td align="right">9,500.00</td>
+                      </tr>
+                      <tr>
+                        <td>12/21/2015</td>
+                        <td>Jena Buenviaje</td>
+                        <td align="right">150,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>12/15/2015</td>
+                        <td>Diane Domingo</td>
+                        <td align="right">70,980.50</td>
+                      </tr>
+                      <tr>
+                        <td>11/27/2015</td>
+                        <td>Aline Domingo</td>
+                        <td align="right">482,902.00</td>
+                      </tr>
+                      <tr>
+                        <td>10/11/2015</td>
+                        <td>Eden Morales</td>
+                        <td align="right">10,904.00</td>
+                      </tr>
+                      <tr>
+                        <td>09/17/2015</td>
+                        <td>Allan Perez</td>
+                        <td align="right">2,200.50</td>
+                      </tr>
+                      <tr>
+                        <td>08/21/2015</td>
+                        <td>John Joey Abuedo</td>
+                        <td align="right">300.00</td>
+                      </tr>
+                      <tr>
+                        <td>07/14/2015</td>
+                        <td>Gian Carlos</td>
+                        <td align="right">3,420.00</td>
+                      </tr>
+                      <tr>
+                        <td>06/17/2015</td>
+                        <td>Adrian Labastida</td>
+                        <td align="right">5,000.50</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th colspan="3" class="text-right"><a href="#">view all</a></th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </section><!-- left col -->
+            
+            <!-- Right col -->
+            <section class="col-lg-5">
+              <!-- Wallet Balance -->
+              <div class="box box-info">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Wallet Balance</h3> <a href="#"><i class="fa fa-refresh pull-right text-aqua"></i></a>
+                </div>
+                <div class="box-body">
+                    <div class="text-center"><span class="peso">&#8369;</span><span class="amount">575, 293.00</span></div>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+              
+              <!-- Allocate Credits -->
+              <div class="box box-success">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Allocate Credits</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form class="form-horizontal">
+                  <div class="box-body">
+                    <div class="form-group extra-margin-top">
+                      <label for="inputProductOwner" class="col-sm-4 control-label">Product Owner</label>
+                      <div class="col-sm-8">
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">Maylyn Orbe</option>
+                          <option>Lorena Gallon</option>
+                          <option>Jena Buenviaje</option>
+                          <option>Eden Morales</option>
+                          <option>Diane Domingo</option>
+                          <option>Aline Macatangay</option>
+                          <option>Allan Perez</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAmount" class="col-sm-4 control-label">Amount</label>
+                      <div class="col-sm-8">
+                      <div class="input-group">
+                        <span class="input-group-addon font-lg">&#8369;</span>
+                        <input type="text" class="form-control" placeholder="0.00">
+                      </div>
+                      </div>
+                    </div>
+                  </div><!-- /.box-body -->
+                    <div class="box-footer text-center">
+                        <button type="submit" class="btn btn-success btn-rounded" data-toggle="modal" data-target="#allocateCredits" style="width:100%;">Submit</button>
+                    </div><!-- /.box-footer -->
+                </form>
+              </div><!-- /.box -->
+              
+              <!-- Modal Allocate Credits -->
+                <div id="allocateCredits" class="modal modal-info" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Allocate outstanding credit?</h4>
+                      </div>
+                      <div class="modal-body">
+                        <span class="font-md"><p>Are you sure you want to allocate <span class="font-xlg">&#8369;</span> 10,000.00 to Maylyn Orbe?</p></span>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline" data-toggle="modal" data-target="#lessCredits">Allocate</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /#allocateCredits -->
+                
+                <!-- Modal Less Credits -->
+                <div id="lessCredits" class="modal modal-danger" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Oooops</h4>
+                      </div>
+                      <div class="modal-body">
+                        <span class="font-md"><p>Wallet balance is less than the intended credit amount to be transfer. Please check your credits.</p></span>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /#lessCredits -->
+              
+            </section><!-- right col -->
+          </div><!-- /.row (main row) -->
+         
+        </section><!-- /.content -->
+        </div><!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+            <strong>2015 &copy; <a href="http:www.yondu.com">YONDU</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+    
+    <!-- BEGIN JAVASCRIPTS 
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2/select2.full.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+	<script src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/fastclick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <!-- page script -->
+    <script>
+      $(function () {
+		  
+		//Initialize Select2 Elements
+        $(".select2").select2();
+		//Initialize DataTables
+        $('#example1').DataTable({
+          "paging": false,
+          "lengthChange": false,
+          "searching": false,
+          "ordering": true,
+          "info": false,
+          "autoWidth": false
+        });
+      });
+    </script>
+</body>
+</html>
